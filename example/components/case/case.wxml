@@ -1,0 +1,12 @@
+<view class="case-container">
+  <view class="case-container-inner">
+    <view class="case-title">
+      <text class="icon ch-tip"></text>
+      <text class="title">{{ title }}</text>
+    </view>
+    <view wx:if="{{ message }}" class="remark">{{ message }}</view>
+    <view class="case-content">
+      <slot></slot>
+    </view>
+  </view>
+</view>

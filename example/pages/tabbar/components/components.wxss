@@ -1,0 +1,71 @@
+page {
+  background: #eef7f2;
+}
+.component-page-container {
+  display: flex;
+  flex-direction: column;
+}
+.component-page-container .page-header {
+  background: #2bae85;
+  color: #fff;
+  height: 80px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0px 8rpx 20rpx 0px rgba(9, 36, 66, 0.04);
+  width: 100%;
+  box-sizing: border-box;
+}
+.component-page-container .page-header-content {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px;
+}
+.component-page-container .page-content {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 12px;
+}
+.component-page-container .page-content .page-nav-cell {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 3px;
+  background: radial-gradient(circle at bottom left, transparent 7.5px, #fff 8px) bottom left, radial-gradient(circle at top left, transparent 7.5px, #fff 8px) top left, radial-gradient(circle at top right, transparent 7.5px, #fff 8px) top right, radial-gradient(circle at bottom right, transparent 7.5px, #fff 8px) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 1px #1a6840);
+  padding: 3px;
+}
+.component-page-container .page-content .page-nav-cell-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 8px;
+  word-wrap: break-word;
+  text-align: center;
+  box-sizing: border-box;
+  background: radial-gradient(circle at bottom left, transparent 7.5px, #fff 8px) bottom left, radial-gradient(circle at top left, transparent 7.5px, #fff 8px) top left, radial-gradient(circle at top right, transparent 7.5px, #fff 8px) top right, radial-gradient(circle at bottom right, transparent 7.5px, #fff 8px) bottom right;
+  background-size: 51% 51%;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.8px #1a6840);
+  color: #141e1b;
+}
+.component-page-container .page-content .page-nav-cell .left {
+  display: flex;
+  align-items: center;
+}
+.component-page-container .page-content .page-nav-cell .left .icon {
+  margin-right: 16px;
+}
+.component-page-container .page-content .icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}

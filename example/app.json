@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/tabbar/components/components",
+    "pages/components/countdown/countdown"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "Charrue UI",
+    "navigationBarTextStyle": "black",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#f8f8f8"
+  },
+  "usingComponents": {
+    "case": "./components/case/case",
+    "countdown": "./dist/countdown/src/countdown"
+  },
+  "sitemapLocation": "sitemap.json"
+}

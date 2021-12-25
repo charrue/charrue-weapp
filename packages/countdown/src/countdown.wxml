@@ -1,0 +1,10 @@
+<view class="charrue-count-down">
+  <block wx:if="{{ multiSegments }}">
+    <text
+      class="{{ index % 2 === 0 ? 'charrue-count-down__number' : 'charrue-count-down__separator' }}"
+      wx:for="{{ timeSegments }}"
+      wx:for-item="segment" wx:key="index"
+    >{{segment}}</text>
+  </block>
+  <block wx:else>{{ formattedTime }}</block>
+</view>

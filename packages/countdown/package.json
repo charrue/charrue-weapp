@@ -1,0 +1,10 @@
+{
+  "name": "@charrue/miniprogram-countdown",
+  "version": "0.0.1",
+  "description": "小程序倒计时组件countdown",
+  "miniprogram": "src",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

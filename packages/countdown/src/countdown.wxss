@@ -1,0 +1,9 @@
+.charrue-count-down {
+  line-height: 20px;
+}
+
+.charrue-count-down__number {
+  display: inline-block;
+  text-align: center;
+  width: 2em;
+}

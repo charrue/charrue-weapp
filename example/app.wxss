@@ -1,0 +1,15 @@
+@import "./styles/index.wxss";
+
+page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: #323233;
+  font-size: 16px;
+  background: #f7f8fa;
+}
+
+.global-page-container {
+  padding: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}

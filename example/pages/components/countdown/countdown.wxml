@@ -1,0 +1,10 @@
+<view class="global-page-container">
+  <case title="基础使用">
+    <countdown time="{{ 1000 * 30 }}" />
+  </case>
+
+  <case title="自定义时间格式">
+    <countdown time="{{ 1000 * 60 * 30 }}" format="DD天 HH时 mm分 ss秒" />
+  </case>
+
+</view>

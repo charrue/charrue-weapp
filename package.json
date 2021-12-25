@@ -1,0 +1,29 @@
+{
+  "name": "@charrue/weapp",
+  "version": "0.0.1",
+  "private": true,
+  "author": "ckangwen",
+  "license": "MIT",
+  "miniprogram": "lib",
+  "description": "小程序 UI 组件库",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "dev": "gulp"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,less}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

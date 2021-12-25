@@ -1,0 +1,68 @@
+@import "../../styles/var.less";
+
+.case-container {
+  width: 100%;
+  background: #fff;
+  // border-radius: 10px;
+  box-sizing: border-box;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  // box-shadow: 0 10px 15px -3px rgba(9, 36, 66, 0.04);
+  border: 3px solid @green-7;
+  padding: 4px;
+
+  &-inner {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px dashed @green-5;
+  }
+
+
+  .case-title {
+    width: 100%;
+    box-sizing: border-box;
+    color: @green-7;
+    font-size: 14px;
+    padding: 8px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid @gray-1;
+    border-radius: 0 0 8px 8px;
+
+    .icon {
+      margin-right: 12px;
+      font-size: 20px;
+    }
+  }
+
+  .remark {
+    position: relative;
+    padding: 4px;
+    padding-left: 20px;
+    background: #eef7f2;
+    color: @green-6;
+    border-radius: 20px 0 0 20px;
+    margin: 4px 8px;
+    box-sizing: border-box;
+    font-size: 12px;
+    &::before {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: @green-6;
+      border-radius: 50%;
+    }
+  }
+
+  .case-content {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+}

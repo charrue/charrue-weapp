@@ -1,0 +1,22 @@
+<view class="component-page-container">
+  <view class="page-header">
+    <view class="page-header-content">Charrue UI 原生小程序组件库</view>
+  </view>
+  <view class="page-content">
+    <view
+      class="page-nav-cell"
+      wx:for="{{ navs }}"
+      wx:key="index"
+      data-name="{{ item.name }}"
+      bindtap="onClick"
+    >
+      <view class="page-nav-cell-inner">
+        <view class="left">
+          <text class="icon ch-{{ item.icon }}" />
+          <text>{{ item.title }}</text>
+        </view>
+        <text class="right icon ch-arrow-right"/>
+      </view>
+    </view>
+  </view>
+</view>
