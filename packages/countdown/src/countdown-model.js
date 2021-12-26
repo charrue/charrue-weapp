@@ -1,10 +1,5 @@
-let prevTimestamp = Date.now();
-
-const requestAnimationFrame = (callback, interval = 16) => {
-  let now = Date.now()
-  const maxInterval  = Math.max(0, interval  - (now - prevTimestamp))
-  let r = setTimeout(callback, maxInterval)
-  prevTimestamp = now + maxInterval
+const requestAnimationFrame = (callback, interval = 20) => {
+  let r = setTimeout(callback, interval)
   return r
 }
 

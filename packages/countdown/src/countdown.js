@@ -65,7 +65,6 @@ Component({
       this.reset();
     },
     remain(val) {
-      console.log(val, 'remain')
       this.setData({
         timeData: parseTimeData(val)
       })

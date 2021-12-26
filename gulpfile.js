@@ -11,6 +11,7 @@ const copeToDistNew = () =>  gulp
       `${src}/**/*.wxml`,
       `${src}/**/*.wxss`,
       `${src}/**/*.json`,
+      `!${src}/**/package.json`,
     ])
     .pipe(gulp.dest(exampleDir))
 
