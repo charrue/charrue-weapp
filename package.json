@@ -11,7 +11,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "dev": "gulp"
+    "watch": "node ./scripts/watch.js"
   },
   "lint-staged": {
     "*.{ts,js}": [
@@ -29,7 +29,9 @@
     "commitizen": "^4.2.4",
     "commitlint-config-cz": "^0.13.3",
     "cz-customizable": "^6.3.0",
-    "gulp": "^4.0.2"
+    "kolorist": "^1.5.1",
+    "ncp": "^2.0.0",
+    "node-watch": "^0.7.2"
   },
   "config": {
     "commitizen": {
