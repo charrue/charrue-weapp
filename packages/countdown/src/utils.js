@@ -5,6 +5,11 @@ const ONE_DAY = 24 * ONE_HOUR
 const REGEX_FORMAT = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g
 
 /* date */
+/**
+ * @param {string} formatter - 格式化占位符
+ * @param {Object} timeData - 时间格式
+ * @returns {string}
+ */
 export const formatTime = (formatter, timeData) => {
 	const {
 		days,

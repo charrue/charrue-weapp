@@ -1,4 +1,4 @@
-const requestAnimationFrame = (callback, interval = 20) => {
+const requestAnimationFrame = (callback, interval = 16) => {
   let r = setTimeout(callback, interval)
   return r
 }

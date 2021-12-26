@@ -7,21 +7,39 @@ Component({
     multipleSlots: true
   },
   properties: {
-    millisecond: Boolean,
+    /**
+     * 倒计时时长，单位毫秒
+     */
     time: {
       type: Number,
       optionalTypes: [Number, String],
       value: 0,
     },
+    /**
+     * 是否开启毫秒级渲染
+     */
+     millisecond: Boolean,
+    /**
+     * 时间格式
+     */
     format: {
       type: String,
       value: "HH:mm:ss"
     },
+    /**
+     * 是否自动开始倒计时
+     */
     autostart: {
       type: Boolean,
       value: true
     },
-    multiSegments: Boolean
+    /**
+     * 是否分段显示
+     */
+    multiSegments: Boolean,
+    customClass: String,
+    numberClass: String,
+    separatorClass: String,
   },
   data: {
     /**
@@ -57,10 +75,18 @@ Component({
     formattedTime: ""
   },
   observers: {
+    millisecond(val) {
+      if (val) {
+        this.setData({
+          format: "HH:mm:ss:SSS"
+        })
+      }
+    },
     time(val) {
       if (this.countdownModel) {
-        // 在created阶段，time的值是0，time值变化后，需要更新Countdown Model 的 time属性
+        // 在created阶段，time和millisecond都是默认值，在值更新后，需要同步更新到Countdown Model
         this.countdownModel.timer = val
+        this.countdownModel.millisecond = this.data.millisecond
       }
       this.reset();
     },

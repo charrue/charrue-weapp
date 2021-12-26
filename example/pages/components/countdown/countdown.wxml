@@ -7,4 +7,12 @@
     <countdown time="{{ 1000 * 60 * 30 }}" format="DD天 HH时 mm分 ss秒" />
   </case>
 
+  <case title="毫秒级渲染">
+    <countdown time="{{ 1000 * 30 }}" millisecond></countdown>
+  </case>
+
+  <case title="分段显示">
+    <countdown time="{{ 1000 * 60 * 30 }}" multiSegments number-class="red"></countdown>
+  </case>
+
 </view>
