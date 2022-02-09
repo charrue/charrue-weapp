@@ -115,6 +115,9 @@ Component({
           this.setData({
             remain: ctx.remainTime
           })
+        },
+        onCompleted: () => {
+          this.triggerEvent("completed")
         }
       })
     },

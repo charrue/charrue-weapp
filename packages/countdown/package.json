@@ -1,6 +1,6 @@
 {
   "name": "@charrue/miniprogram-countdown",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "小程序倒计时组件countdown",
   "miniprogram": "src",
   "main": "./src/index.js",
